@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-dark: #874356;
+  --primary-light: #f68989;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact {
+  background-color: var(--primary-dark);
+}
+.heading {
+  border-bottom: 4px solid #f6e7d8;
+  padding: 30px 0 20px;
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  color: #f6e7d8;
+}
+.heading h2 {
+  font-weight: normal;
+  font-size: 38px;
+}
+.profiles {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+.profile img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: white;
+}
+footer {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+.footer__logo {
+  font-size: 44px;
+  font-weight: semi-bold;
+  font-family: "Noto Serif", serif;
+}
+.footer__list {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.footer__list ul {
+  list-style: none;
+}
+.footer__list li {
+  margin-bottom: 15px;
+}
+.footer__list ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__list ul li a:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .profiles {
+    justify-content: center;
+  }
+  .profile {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .footer__list {
+    font-size: 16px;
+  }
+}
